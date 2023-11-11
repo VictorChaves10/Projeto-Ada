@@ -22,7 +22,7 @@ aside h1{
     line-height: 7.5rem;
 }
 
-aside h1 span {
+aside h1 span, section.register h2 span {
     color: #2b5270;
 }
 
