@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+
+
+
+aside h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+aside h1 span {
+    color: #2b5270;
+}
