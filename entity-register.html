@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entity Register</title>
+    <title>We Form</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7846910f0f.js" crossorigin="anonymous"></script>
@@ -19,21 +19,38 @@
         </aside>
 
         <section class="register">
-            <a href="index.html">
-                <i class="fa-solid fa-angle-left"></i>
-            </a>
-            <h2>Nova <span>entidade</h2>
-            
-                <form action="#">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name">
 
-                </form>
-    
-            <div class="new-register">
-                <p>Sua entidade não se enquadra nos campos de atuação disponíveis?</p>
-                <a href="#">Registrar novo campo de atuação</a>
+            <div class="entity-register-header">
+                <a href="index.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+
+                <h2>Nova <span>entidade</span></h2>
             </div>
+
+            <form action="#">
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+
+                <label for="name">Campo de atuação</label>
+                <div class="select-div">
+                    <select name="field" id="field">
+                        <option value="#">Selecione uma opção</option>
+                        <option value="abrigo">Abrigo de animais</option>
+                        <option value="alimentacao">Centro de alimentações</option>
+                        <option value="cuidador">Cuidador temporário</option>
+                    </select>
+                </div>
+
+                <div class="points">
+                    <label for="name">Pontos de coletas</label>
+                    <input type="text" id="name">
+                    <button>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+
+            </form>
 
         </section>
 

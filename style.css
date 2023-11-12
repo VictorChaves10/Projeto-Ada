@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 
 
 * {
@@ -10,6 +12,10 @@
 :root {
     font-size: 62.5%;
 
+    --primary-color: #183153;
+
+    --default-border: 1px solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
 }
 
 body {
@@ -39,7 +45,7 @@ aside.hero {
 
 aside.hero h1 {
 
-    margin-top: 8rem;
+    margin-top: 5rem;
     font-size: 6.4rem;
     font-weight: 500;
     line-height: 7.5rem;
@@ -47,7 +53,7 @@ aside.hero h1 {
 
 aside.hero h1 span,
 section.register h2 span {
-    color: #2b5270;
+    color: var(--primary-color);
 }
 
 section.register {
@@ -56,7 +62,7 @@ section.register {
     width: 60rem;
     padding: 4.4rem 5.7rem;
     height: 52rem;
-    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: var(--default-border)
 }
 
 section.register h2 {
@@ -84,25 +90,24 @@ section .actions-register a {
     font-size: 2.4rem;
     color: #fff;
     background-color: #E09664;
-    border-radius: 1.2rem;
+    border-radius: var(--default-border-radius)
 }
 
 
 section .actions-register a:hover {
-    background-color: #e09564ad;
+    background-color: #e09564be;
 
 }
 
 section .actions-register a+a {
 
     margin-top: 4.7rem;
-    background-color: #2b5270;
-
+    background-color: var(--primary-color)
 }
 
 section .actions-register a+a:hover {
 
-    background-color: #2b527085;
+    background-color: #0e3e81;
 }
 
 section .new-register {
@@ -121,10 +126,93 @@ section .new-register p {
 
 section .new-register a {
     font-size: 1.8rem;
-    color: #2b5270;
+    color: var(--primary-color)
+}
+
+section .new-register a:hover {
+    color: #0e3e81;
+}
+
+
+
+/* ENTITY REGISTER */
+
+
+.entity-register-header {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin-bottom: 2.7rem;
+}
+
+.entity-register-header i {
+    font-size: 2.7rem;
+    color: var(--primary-color);
+}
+
+
+section form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    display: block;
+    margin: 1.5rem 0rem 0.5rem 0rem;
+
+    color: var(--primary-color);
+}
+
+section form input,
+select {
+
+    width: 48.9rem;
+    height: 5.5rem;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    background-color: #d5d5d56e;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
 
 }
 
-section .new-register a:hover{
-    color: #2b527083;
+section form select {
+    appearance: none;
+}
+
+section form .select-div {
+    position: relative;
+}
+
+section form .select-div::after {
+    top: 1.7rem;
+    right: 1.2rem;
+    content: '\f107';
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+    position: absolute;
+
+    color: #0e3e81;
+}
+
+
+section form .points {
+    position: relative;
+}
+
+.points button {
+    position: absolute;
+    right: -3.9rem;
+    top: 4.2rem;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 2.7rem;
+}
+
+.points button:hover {
+    cursor: pointer;
+    color: #0e3e81;
 }
